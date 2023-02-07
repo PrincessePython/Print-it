@@ -125,17 +125,14 @@ header {
 
 /* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
 /* Gestion des fleches du carrousel */
+
 #banner .arrow {
-	position: absolute;
-}
-#banner .arrow_left {
-	left: 10px;
-	height: 50px;
-	padding-right: 1150px;}
-#banner .arrow_right {
-	right: 10px;
-	height: 50px;
-	padding-left: 1150px;
+	display: flex;
+	position: absolute; /* ici utilisé avec top et transform pour centrer verticalement l'élement */
+	top: 50%; /* l'élément est positionné en haut à mi-chemin de la hauteur de div */
+	transform: translateY(-50%); /* permet de centrer l'élément verticalement */
+	width: 100%; 
+	justify-content: space-between;
 }
 
 /* Gestion des points du carrousel */
